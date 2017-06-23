@@ -1,0 +1,503 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		47AD596F1EFCBCC9001901FD /* 陈小春 - 独家记忆.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 47AD59541EFCBCC9001901FD /* 陈小春 - 独家记忆.mp3 */; };
+		47AD59701EFCBCC9001901FD /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 47AD59561EFCBCC9001901FD /* AppDelegate.m */; };
+		47AD59711EFCBCC9001901FD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 47AD59571EFCBCC9001901FD /* Assets.xcassets */; };
+		47AD59721EFCBCC9001901FD /* FHAlbumModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 47AD595A1EFCBCC9001901FD /* FHAlbumModel.m */; };
+		47AD59731EFCBCC9001901FD /* FHAudioViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 47AD595C1EFCBCC9001901FD /* FHAudioViewController.m */; };
+		47AD59741EFCBCC9001901FD /* FHAVPlayerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 47AD595E1EFCBCC9001901FD /* FHAVPlayerViewController.m */; };
+		47AD59751EFCBCC9001901FD /* FHAVPlayerViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 47AD595F1EFCBCC9001901FD /* FHAVPlayerViewController.xib */; };
+		47AD59761EFCBCC9001901FD /* FHCustomButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 47AD59611EFCBCC9001901FD /* FHCustomButton.m */; };
+		47AD59771EFCBCC9001901FD /* FHHomePageTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 47AD59631EFCBCC9001901FD /* FHHomePageTableViewController.m */; };
+		47AD59781EFCBCC9001901FD /* FHLrcModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 47AD59651EFCBCC9001901FD /* FHLrcModel.m */; };
+		47AD59791EFCBCC9001901FD /* FHMusicPlayerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 47AD59671EFCBCC9001901FD /* FHMusicPlayerViewController.m */; };
+		47AD597A1EFCBCC9001901FD /* FHMusicPlayerViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 47AD59681EFCBCC9001901FD /* FHMusicPlayerViewController.xib */; };
+		47AD597B1EFCBCC9001901FD /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 47AD59691EFCBCC9001901FD /* Info.plist */; };
+		47AD597C1EFCBCC9001901FD /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 47AD596A1EFCBCC9001901FD /* main.m */; };
+		47AD597D1EFCBCC9001901FD /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = 47AD596B1EFCBCC9001901FD /* README.md */; };
+		47AD597E1EFCBCC9001901FD /* songList.json in Resources */ = {isa = PBXBuildFile; fileRef = 47AD596C1EFCBCC9001901FD /* songList.json */; };
+		47AD597F1EFCBCC9001901FD /* UIColor+RGBHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 47AD596E1EFCBCC9001901FD /* UIColor+RGBHelper.m */; };
+		47AD59A01EFCBD49001901FD /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 47AD59861EFCBD49001901FD /* Info.plist */; };
+		47AD59A11EFCBD49001901FD /* MASCompositeConstraint.m in Sources */ = {isa = PBXBuildFile; fileRef = 47AD59881EFCBD49001901FD /* MASCompositeConstraint.m */; };
+		47AD59A21EFCBD49001901FD /* MASConstraint.m in Sources */ = {isa = PBXBuildFile; fileRef = 47AD598B1EFCBD49001901FD /* MASConstraint.m */; };
+		47AD59A31EFCBD49001901FD /* MASConstraintMaker.m in Sources */ = {isa = PBXBuildFile; fileRef = 47AD598D1EFCBD49001901FD /* MASConstraintMaker.m */; };
+		47AD59A41EFCBD49001901FD /* MASLayoutConstraint.m in Sources */ = {isa = PBXBuildFile; fileRef = 47AD598F1EFCBD49001901FD /* MASLayoutConstraint.m */; };
+		47AD59A51EFCBD49001901FD /* MASViewAttribute.m in Sources */ = {isa = PBXBuildFile; fileRef = 47AD59931EFCBD49001901FD /* MASViewAttribute.m */; };
+		47AD59A61EFCBD49001901FD /* MASViewConstraint.m in Sources */ = {isa = PBXBuildFile; fileRef = 47AD59951EFCBD49001901FD /* MASViewConstraint.m */; };
+		47AD59A71EFCBD49001901FD /* NSArray+MASAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 47AD59971EFCBD49001901FD /* NSArray+MASAdditions.m */; };
+		47AD59A81EFCBD49001901FD /* NSLayoutConstraint+MASDebugAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 47AD599A1EFCBD49001901FD /* NSLayoutConstraint+MASDebugAdditions.m */; };
+		47AD59A91EFCBD49001901FD /* View+MASAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 47AD599C1EFCBD49001901FD /* View+MASAdditions.m */; };
+		47AD59AA1EFCBD49001901FD /* ViewController+MASAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 47AD599F1EFCBD49001901FD /* ViewController+MASAdditions.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		47AD593A1EFCBC93001901FD /* iOSPlayerStudy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iOSPlayerStudy.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		47AD59541EFCBCC9001901FD /* 陈小春 - 独家记忆.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "陈小春 - 独家记忆.mp3"; sourceTree = "<group>"; };
+		47AD59551EFCBCC9001901FD /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		47AD59561EFCBCC9001901FD /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		47AD59571EFCBCC9001901FD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		47AD59591EFCBCC9001901FD /* FHAlbumModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FHAlbumModel.h; sourceTree = "<group>"; };
+		47AD595A1EFCBCC9001901FD /* FHAlbumModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FHAlbumModel.m; sourceTree = "<group>"; };
+		47AD595B1EFCBCC9001901FD /* FHAudioViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FHAudioViewController.h; sourceTree = "<group>"; };
+		47AD595C1EFCBCC9001901FD /* FHAudioViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FHAudioViewController.m; sourceTree = "<group>"; };
+		47AD595D1EFCBCC9001901FD /* FHAVPlayerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FHAVPlayerViewController.h; sourceTree = "<group>"; };
+		47AD595E1EFCBCC9001901FD /* FHAVPlayerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FHAVPlayerViewController.m; sourceTree = "<group>"; };
+		47AD595F1EFCBCC9001901FD /* FHAVPlayerViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FHAVPlayerViewController.xib; sourceTree = "<group>"; };
+		47AD59601EFCBCC9001901FD /* FHCustomButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FHCustomButton.h; sourceTree = "<group>"; };
+		47AD59611EFCBCC9001901FD /* FHCustomButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FHCustomButton.m; sourceTree = "<group>"; };
+		47AD59621EFCBCC9001901FD /* FHHomePageTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FHHomePageTableViewController.h; sourceTree = "<group>"; };
+		47AD59631EFCBCC9001901FD /* FHHomePageTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FHHomePageTableViewController.m; sourceTree = "<group>"; };
+		47AD59641EFCBCC9001901FD /* FHLrcModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FHLrcModel.h; sourceTree = "<group>"; };
+		47AD59651EFCBCC9001901FD /* FHLrcModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FHLrcModel.m; sourceTree = "<group>"; };
+		47AD59661EFCBCC9001901FD /* FHMusicPlayerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FHMusicPlayerViewController.h; sourceTree = "<group>"; };
+		47AD59671EFCBCC9001901FD /* FHMusicPlayerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FHMusicPlayerViewController.m; sourceTree = "<group>"; };
+		47AD59681EFCBCC9001901FD /* FHMusicPlayerViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FHMusicPlayerViewController.xib; sourceTree = "<group>"; };
+		47AD59691EFCBCC9001901FD /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		47AD596A1EFCBCC9001901FD /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		47AD596B1EFCBCC9001901FD /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		47AD596C1EFCBCC9001901FD /* songList.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = songList.json; sourceTree = "<group>"; };
+		47AD596D1EFCBCC9001901FD /* UIColor+RGBHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+RGBHelper.h"; sourceTree = "<group>"; };
+		47AD596E1EFCBCC9001901FD /* UIColor+RGBHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+RGBHelper.m"; sourceTree = "<group>"; };
+		47AD59861EFCBD49001901FD /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		47AD59871EFCBD49001901FD /* MASCompositeConstraint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MASCompositeConstraint.h; sourceTree = "<group>"; };
+		47AD59881EFCBD49001901FD /* MASCompositeConstraint.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MASCompositeConstraint.m; sourceTree = "<group>"; };
+		47AD59891EFCBD49001901FD /* MASConstraint+Private.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MASConstraint+Private.h"; sourceTree = "<group>"; };
+		47AD598A1EFCBD49001901FD /* MASConstraint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MASConstraint.h; sourceTree = "<group>"; };
+		47AD598B1EFCBD49001901FD /* MASConstraint.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MASConstraint.m; sourceTree = "<group>"; };
+		47AD598C1EFCBD49001901FD /* MASConstraintMaker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MASConstraintMaker.h; sourceTree = "<group>"; };
+		47AD598D1EFCBD49001901FD /* MASConstraintMaker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MASConstraintMaker.m; sourceTree = "<group>"; };
+		47AD598E1EFCBD49001901FD /* MASLayoutConstraint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MASLayoutConstraint.h; sourceTree = "<group>"; };
+		47AD598F1EFCBD49001901FD /* MASLayoutConstraint.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MASLayoutConstraint.m; sourceTree = "<group>"; };
+		47AD59901EFCBD49001901FD /* Masonry.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Masonry.h; sourceTree = "<group>"; };
+		47AD59911EFCBD49001901FD /* MASUtilities.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MASUtilities.h; sourceTree = "<group>"; };
+		47AD59921EFCBD49001901FD /* MASViewAttribute.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MASViewAttribute.h; sourceTree = "<group>"; };
+		47AD59931EFCBD49001901FD /* MASViewAttribute.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MASViewAttribute.m; sourceTree = "<group>"; };
+		47AD59941EFCBD49001901FD /* MASViewConstraint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MASViewConstraint.h; sourceTree = "<group>"; };
+		47AD59951EFCBD49001901FD /* MASViewConstraint.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MASViewConstraint.m; sourceTree = "<group>"; };
+		47AD59961EFCBD49001901FD /* NSArray+MASAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+MASAdditions.h"; sourceTree = "<group>"; };
+		47AD59971EFCBD49001901FD /* NSArray+MASAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+MASAdditions.m"; sourceTree = "<group>"; };
+		47AD59981EFCBD49001901FD /* NSArray+MASShorthandAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+MASShorthandAdditions.h"; sourceTree = "<group>"; };
+		47AD59991EFCBD49001901FD /* NSLayoutConstraint+MASDebugAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSLayoutConstraint+MASDebugAdditions.h"; sourceTree = "<group>"; };
+		47AD599A1EFCBD49001901FD /* NSLayoutConstraint+MASDebugAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSLayoutConstraint+MASDebugAdditions.m"; sourceTree = "<group>"; };
+		47AD599B1EFCBD49001901FD /* View+MASAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "View+MASAdditions.h"; sourceTree = "<group>"; };
+		47AD599C1EFCBD49001901FD /* View+MASAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "View+MASAdditions.m"; sourceTree = "<group>"; };
+		47AD599D1EFCBD49001901FD /* View+MASShorthandAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "View+MASShorthandAdditions.h"; sourceTree = "<group>"; };
+		47AD599E1EFCBD49001901FD /* ViewController+MASAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "ViewController+MASAdditions.h"; sourceTree = "<group>"; };
+		47AD599F1EFCBD49001901FD /* ViewController+MASAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "ViewController+MASAdditions.m"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		47AD59371EFCBC93001901FD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		47AD59311EFCBC93001901FD = {
+			isa = PBXGroup;
+			children = (
+				47AD593C1EFCBC93001901FD /* iOSPlayerStudy */,
+				47AD593B1EFCBC93001901FD /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		47AD593B1EFCBC93001901FD /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				47AD593A1EFCBC93001901FD /* iOSPlayerStudy.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		47AD593C1EFCBC93001901FD /* iOSPlayerStudy */ = {
+			isa = PBXGroup;
+			children = (
+				47AD59851EFCBD49001901FD /* Masonry */,
+				47AD59551EFCBCC9001901FD /* AppDelegate.h */,
+				47AD59561EFCBCC9001901FD /* AppDelegate.m */,
+				47AD59811EFCBCFC001901FD /* 功能列表 */,
+				47AD59821EFCBD04001901FD /* 播放本地音乐 */,
+				47AD59831EFCBD0D001901FD /* 播放在线音乐 */,
+				47AD59841EFCBD16001901FD /* 音乐播放器 */,
+				47AD596B1EFCBCC9001901FD /* README.md */,
+				47AD59801EFCBCEF001901FD /* Resources */,
+				47AD59571EFCBCC9001901FD /* Assets.xcassets */,
+				47AD59691EFCBCC9001901FD /* Info.plist */,
+				47AD593D1EFCBC93001901FD /* Supporting Files */,
+			);
+			path = iOSPlayerStudy;
+			sourceTree = "<group>";
+		};
+		47AD593D1EFCBC93001901FD /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				47AD596A1EFCBCC9001901FD /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		47AD59801EFCBCEF001901FD /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				47AD596C1EFCBCC9001901FD /* songList.json */,
+				47AD59541EFCBCC9001901FD /* 陈小春 - 独家记忆.mp3 */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		47AD59811EFCBCFC001901FD /* 功能列表 */ = {
+			isa = PBXGroup;
+			children = (
+				47AD59621EFCBCC9001901FD /* FHHomePageTableViewController.h */,
+				47AD59631EFCBCC9001901FD /* FHHomePageTableViewController.m */,
+			);
+			name = "功能列表";
+			sourceTree = "<group>";
+		};
+		47AD59821EFCBD04001901FD /* 播放本地音乐 */ = {
+			isa = PBXGroup;
+			children = (
+				47AD595B1EFCBCC9001901FD /* FHAudioViewController.h */,
+				47AD595C1EFCBCC9001901FD /* FHAudioViewController.m */,
+			);
+			name = "播放本地音乐";
+			sourceTree = "<group>";
+		};
+		47AD59831EFCBD0D001901FD /* 播放在线音乐 */ = {
+			isa = PBXGroup;
+			children = (
+				47AD595D1EFCBCC9001901FD /* FHAVPlayerViewController.h */,
+				47AD595E1EFCBCC9001901FD /* FHAVPlayerViewController.m */,
+				47AD595F1EFCBCC9001901FD /* FHAVPlayerViewController.xib */,
+			);
+			name = "播放在线音乐";
+			sourceTree = "<group>";
+		};
+		47AD59841EFCBD16001901FD /* 音乐播放器 */ = {
+			isa = PBXGroup;
+			children = (
+				47AD59AD1EFCBEC6001901FD /* Controller */,
+				47AD59AC1EFCBEC1001901FD /* View */,
+				47AD59AB1EFCBEBC001901FD /* Model */,
+			);
+			name = "音乐播放器";
+			sourceTree = "<group>";
+		};
+		47AD59851EFCBD49001901FD /* Masonry */ = {
+			isa = PBXGroup;
+			children = (
+				47AD59861EFCBD49001901FD /* Info.plist */,
+				47AD59871EFCBD49001901FD /* MASCompositeConstraint.h */,
+				47AD59881EFCBD49001901FD /* MASCompositeConstraint.m */,
+				47AD59891EFCBD49001901FD /* MASConstraint+Private.h */,
+				47AD598A1EFCBD49001901FD /* MASConstraint.h */,
+				47AD598B1EFCBD49001901FD /* MASConstraint.m */,
+				47AD598C1EFCBD49001901FD /* MASConstraintMaker.h */,
+				47AD598D1EFCBD49001901FD /* MASConstraintMaker.m */,
+				47AD598E1EFCBD49001901FD /* MASLayoutConstraint.h */,
+				47AD598F1EFCBD49001901FD /* MASLayoutConstraint.m */,
+				47AD59901EFCBD49001901FD /* Masonry.h */,
+				47AD59911EFCBD49001901FD /* MASUtilities.h */,
+				47AD59921EFCBD49001901FD /* MASViewAttribute.h */,
+				47AD59931EFCBD49001901FD /* MASViewAttribute.m */,
+				47AD59941EFCBD49001901FD /* MASViewConstraint.h */,
+				47AD59951EFCBD49001901FD /* MASViewConstraint.m */,
+				47AD59961EFCBD49001901FD /* NSArray+MASAdditions.h */,
+				47AD59971EFCBD49001901FD /* NSArray+MASAdditions.m */,
+				47AD59981EFCBD49001901FD /* NSArray+MASShorthandAdditions.h */,
+				47AD59991EFCBD49001901FD /* NSLayoutConstraint+MASDebugAdditions.h */,
+				47AD599A1EFCBD49001901FD /* NSLayoutConstraint+MASDebugAdditions.m */,
+				47AD599B1EFCBD49001901FD /* View+MASAdditions.h */,
+				47AD599C1EFCBD49001901FD /* View+MASAdditions.m */,
+				47AD599D1EFCBD49001901FD /* View+MASShorthandAdditions.h */,
+				47AD599E1EFCBD49001901FD /* ViewController+MASAdditions.h */,
+				47AD599F1EFCBD49001901FD /* ViewController+MASAdditions.m */,
+			);
+			path = Masonry;
+			sourceTree = "<group>";
+		};
+		47AD59AB1EFCBEBC001901FD /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				47AD59591EFCBCC9001901FD /* FHAlbumModel.h */,
+				47AD595A1EFCBCC9001901FD /* FHAlbumModel.m */,
+				47AD59641EFCBCC9001901FD /* FHLrcModel.h */,
+				47AD59651EFCBCC9001901FD /* FHLrcModel.m */,
+				47AD596D1EFCBCC9001901FD /* UIColor+RGBHelper.h */,
+				47AD596E1EFCBCC9001901FD /* UIColor+RGBHelper.m */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		47AD59AC1EFCBEC1001901FD /* View */ = {
+			isa = PBXGroup;
+			children = (
+				47AD59601EFCBCC9001901FD /* FHCustomButton.h */,
+				47AD59611EFCBCC9001901FD /* FHCustomButton.m */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		47AD59AD1EFCBEC6001901FD /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				47AD59661EFCBCC9001901FD /* FHMusicPlayerViewController.h */,
+				47AD59671EFCBCC9001901FD /* FHMusicPlayerViewController.m */,
+				47AD59681EFCBCC9001901FD /* FHMusicPlayerViewController.xib */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		47AD59391EFCBC93001901FD /* iOSPlayerStudy */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 47AD59511EFCBC93001901FD /* Build configuration list for PBXNativeTarget "iOSPlayerStudy" */;
+			buildPhases = (
+				47AD59361EFCBC93001901FD /* Sources */,
+				47AD59371EFCBC93001901FD /* Frameworks */,
+				47AD59381EFCBC93001901FD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = iOSPlayerStudy;
+			productName = iOSPlayerStudy;
+			productReference = 47AD593A1EFCBC93001901FD /* iOSPlayerStudy.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		47AD59321EFCBC93001901FD /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0830;
+				ORGANIZATIONNAME = "付航";
+				TargetAttributes = {
+					47AD59391EFCBC93001901FD = {
+						CreatedOnToolsVersion = 8.3.2;
+						DevelopmentTeam = VD85SV55A8;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 47AD59351EFCBC93001901FD /* Build configuration list for PBXProject "iOSPlayerStudy" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 47AD59311EFCBC93001901FD;
+			productRefGroup = 47AD593B1EFCBC93001901FD /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				47AD59391EFCBC93001901FD /* iOSPlayerStudy */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		47AD59381EFCBC93001901FD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				47AD59751EFCBCC9001901FD /* FHAVPlayerViewController.xib in Resources */,
+				47AD59711EFCBCC9001901FD /* Assets.xcassets in Resources */,
+				47AD597E1EFCBCC9001901FD /* songList.json in Resources */,
+				47AD596F1EFCBCC9001901FD /* 陈小春 - 独家记忆.mp3 in Resources */,
+				47AD597B1EFCBCC9001901FD /* Info.plist in Resources */,
+				47AD597A1EFCBCC9001901FD /* FHMusicPlayerViewController.xib in Resources */,
+				47AD59A01EFCBD49001901FD /* Info.plist in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		47AD59361EFCBC93001901FD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				47AD59761EFCBCC9001901FD /* FHCustomButton.m in Sources */,
+				47AD59701EFCBCC9001901FD /* AppDelegate.m in Sources */,
+				47AD597D1EFCBCC9001901FD /* README.md in Sources */,
+				47AD59731EFCBCC9001901FD /* FHAudioViewController.m in Sources */,
+				47AD59A11EFCBD49001901FD /* MASCompositeConstraint.m in Sources */,
+				47AD597F1EFCBCC9001901FD /* UIColor+RGBHelper.m in Sources */,
+				47AD59A61EFCBD49001901FD /* MASViewConstraint.m in Sources */,
+				47AD59791EFCBCC9001901FD /* FHMusicPlayerViewController.m in Sources */,
+				47AD59A91EFCBD49001901FD /* View+MASAdditions.m in Sources */,
+				47AD59A81EFCBD49001901FD /* NSLayoutConstraint+MASDebugAdditions.m in Sources */,
+				47AD59A41EFCBD49001901FD /* MASLayoutConstraint.m in Sources */,
+				47AD59AA1EFCBD49001901FD /* ViewController+MASAdditions.m in Sources */,
+				47AD59A31EFCBD49001901FD /* MASConstraintMaker.m in Sources */,
+				47AD59771EFCBCC9001901FD /* FHHomePageTableViewController.m in Sources */,
+				47AD59741EFCBCC9001901FD /* FHAVPlayerViewController.m in Sources */,
+				47AD59781EFCBCC9001901FD /* FHLrcModel.m in Sources */,
+				47AD597C1EFCBCC9001901FD /* main.m in Sources */,
+				47AD59A71EFCBD49001901FD /* NSArray+MASAdditions.m in Sources */,
+				47AD59A51EFCBD49001901FD /* MASViewAttribute.m in Sources */,
+				47AD59721EFCBCC9001901FD /* FHAlbumModel.m in Sources */,
+				47AD59A21EFCBD49001901FD /* MASConstraint.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		47AD594F1EFCBC93001901FD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		47AD59501EFCBC93001901FD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		47AD59521EFCBC93001901FD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = VD85SV55A8;
+				INFOPLIST_FILE = iOSPlayerStudy/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = rongxwy.iOSPlayerStudy;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		47AD59531EFCBC93001901FD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = VD85SV55A8;
+				INFOPLIST_FILE = iOSPlayerStudy/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = rongxwy.iOSPlayerStudy;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		47AD59351EFCBC93001901FD /* Build configuration list for PBXProject "iOSPlayerStudy" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				47AD594F1EFCBC93001901FD /* Debug */,
+				47AD59501EFCBC93001901FD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		47AD59511EFCBC93001901FD /* Build configuration list for PBXNativeTarget "iOSPlayerStudy" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				47AD59521EFCBC93001901FD /* Debug */,
+				47AD59531EFCBC93001901FD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 47AD59321EFCBC93001901FD /* Project object */;
+}
