@@ -77,8 +77,7 @@
 - (AVPlayer *)avPlayer {
     
     if (!_avPlayer) {
-        AVPlayerItem *item = [AVPlayerItem new];
-        _avPlayer = [[AVPlayer alloc] initWithPlayerItem:item];
+        _avPlayer = [[AVPlayer alloc] initWithPlayerItem:nil];
     }
     return _avPlayer;
 }

@@ -67,24 +67,17 @@
 // 这个类主要讲播放本地音频
 - (void)setUpAudioVC {
     FHAudioViewController *audioVC = [FHAudioViewController new];
-    [[self getWindow] setRootViewController:audioVC];
+    [self.navigationController pushViewController:audioVC animated:YES];
 }
 // 这个类主要讲播放在线音频
 - (void)setupAVPlayerVC {
     FHAVPlayerViewController *avPlayerVC = [FHAVPlayerViewController new];
-    [[self getWindow] setRootViewController:avPlayerVC];
+    [self.navigationController pushViewController:avPlayerVC animated:YES];
 }
 // 完整的音乐播放器
 - (void)setupMusicPlayerVC {
     FHMusicPlayerViewController *musicPalyerVC = [FHMusicPlayerViewController new];
-    [[self getWindow] setRootViewController:musicPalyerVC];
+    [self.navigationController pushViewController:musicPalyerVC animated:YES];
 }
-// 获取window
-- (UIWindow *)getWindow {
-    
-    AppDelegate *app = (AppDelegate *)[UIApplication sharedApplication].delegate;
-    return app.window;
-}
-
 
 @end

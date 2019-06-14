@@ -104,6 +104,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		003AEF9622B38A3F002DC272 /* Libs */ = {
+			isa = PBXGroup;
+			children = (
+				47AD59851EFCBD49001901FD /* Masonry */,
+			);
+			name = Libs;
+			sourceTree = "<group>";
+		};
+		003AEF9722B38A51002DC272 /* AppDelegate */ = {
+			isa = PBXGroup;
+			children = (
+				47AD59551EFCBCC9001901FD /* AppDelegate.h */,
+				47AD59561EFCBCC9001901FD /* AppDelegate.m */,
+			);
+			name = AppDelegate;
+			sourceTree = "<group>";
+		};
 		47AD59311EFCBC93001901FD = {
 			isa = PBXGroup;
 			children = (
@@ -123,13 +140,12 @@
 		47AD593C1EFCBC93001901FD /* iOSPlayerStudy */ = {
 			isa = PBXGroup;
 			children = (
-				47AD59851EFCBD49001901FD /* Masonry */,
-				47AD59551EFCBCC9001901FD /* AppDelegate.h */,
-				47AD59561EFCBCC9001901FD /* AppDelegate.m */,
+				003AEF9722B38A51002DC272 /* AppDelegate */,
 				47AD59811EFCBCFC001901FD /* 功能列表 */,
 				47AD59821EFCBD04001901FD /* 播放本地音乐 */,
 				47AD59831EFCBD0D001901FD /* 播放在线音乐 */,
 				47AD59841EFCBD16001901FD /* 音乐播放器 */,
+				003AEF9622B38A3F002DC272 /* Libs */,
 				47AD596B1EFCBCC9001901FD /* README.md */,
 				47AD59801EFCBCEF001901FD /* Resources */,
 				47AD59571EFCBCC9001901FD /* Assets.xcassets */,
@@ -290,7 +306,7 @@
 				TargetAttributes = {
 					47AD59391EFCBC93001901FD = {
 						CreatedOnToolsVersion = 8.3.2;
-						DevelopmentTeam = VD85SV55A8;
+						DevelopmentTeam = ZGA994BAL6;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -300,6 +316,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				Base,
 			);
@@ -456,7 +473,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = VD85SV55A8;
+				DEVELOPMENT_TEAM = ZGA994BAL6;
 				INFOPLIST_FILE = iOSPlayerStudy/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = rongxwy.iOSPlayerStudy;
@@ -468,7 +485,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = VD85SV55A8;
+				DEVELOPMENT_TEAM = ZGA994BAL6;
 				INFOPLIST_FILE = iOSPlayerStudy/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = rongxwy.iOSPlayerStudy;

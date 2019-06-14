@@ -38,20 +38,20 @@
         
         UIButton *button = [UIButton buttonWithType:UIButtonTypeSystem];
         [self.view addSubview:button];
-        [button setFrame:CGRectMake(20 + i * 50, 130 , 60, 40)];
+        [button setFrame:CGRectMake(20 + i * 50, 200 , 60, 40)];
         [button setTitle:titleArr[i] forState:UIControlStateNormal];
         button.tag = i+100;
         [button addTarget:self action:@selector(controlAVPlayerAction:) forControlEvents:UIControlEventTouchUpInside];
     }
     
     // (2)初始化缓冲进度条
-    _progressView = [[UIProgressView alloc] initWithFrame:CGRectMake(20, 59, ScreenWidth - 130 - 20, 5)];
+    _progressView = [[UIProgressView alloc] initWithFrame:CGRectMake(20, 130, ScreenWidth - 130 - 20, 5)];
     // 设置缓冲进度条的颜色
     _progressView.progressTintColor = [UIColor yellowColor];
     [self.view addSubview:_progressView];
     
     // (3)初始化播放进度
-    _pregressSlider = [[UISlider alloc] initWithFrame:CGRectMake(20, 50, ScreenWidth - 130 - 20, 20)];
+    _pregressSlider = [[UISlider alloc] initWithFrame:CGRectMake(20, 120, ScreenWidth - 130 - 20, 20)];
     _pregressSlider.minimumValue = 0.0f;
     _pregressSlider.maximumValue = 1.0f;
     // 把_pregressSlider小于滑块的部分设置成蓝色以显示播放进度
@@ -61,23 +61,24 @@
     [_pregressSlider addTarget:self action:@selector(pregressChange) forControlEvents:UIControlEventValueChanged];
     [self.view addSubview: _pregressSlider];
     // (4)时间
-    _pregressLabel = [[UILabel alloc] initWithFrame:CGRectMake(ScreenWidth - 120, 50, 100, 20)];
+    _pregressLabel = [[UILabel alloc] initWithFrame:CGRectMake(ScreenWidth - 120, 130, 100, 20)];
     _pregressLabel.text = @"00:00/00:00";
     [self.view addSubview:_pregressLabel];
     
     // (5)初始化音量
-    _volumeSlider = [[UISlider alloc] initWithFrame:CGRectMake(20, 90, ScreenWidth - 130 - 20, 20)];
+    _volumeSlider = [[UISlider alloc] initWithFrame:CGRectMake(20, 170, ScreenWidth - 130 - 20, 20)];
     [_volumeSlider addTarget:self action:@selector(volumeChange) forControlEvents:UIControlEventValueChanged];
     _volumeSlider.minimumValue = 0.0f;
     _volumeSlider.maximumValue = 10.0f;
     _volumeSlider.value = 1.0f;
     [self.view addSubview:_volumeSlider];
-    UILabel *volumeLabel = [[UILabel alloc] initWithFrame:CGRectMake(ScreenWidth - 120, 90, 40, 20)];
+    UILabel *volumeLabel = [[UILabel alloc] initWithFrame:CGRectMake(ScreenWidth - 120, 170, 40, 20)];
     volumeLabel.text = @"音量";
     [self.view addSubview:volumeLabel];
     
     // 2.播放在线音频文件
     // (1)取得音频播放路径
+#warning 请换成可用的网址
     NSString *strURL = @"http://yinyueshiting.baidu.com/data2/music/42783748/42783748.mp3?xcode=b31ae4e046eac3470c486914f0acd7b6";
     // (2)把音频文件转化成url格式
     NSURL *url = [NSURL URLWithString:strURL];
@@ -91,11 +92,14 @@
     [self.avPlayer.currentItem addObserver:self forKeyPath:@"status" options:NSKeyValueObservingOptionNew context:nil];
     // (6)监听缓存状态
     [self.avPlayer.currentItem addObserver:self forKeyPath:@"loadedTimeRanges" options:NSKeyValueObservingOptionNew context:nil];
+    [self.avPlayer.currentItem addObserver:self forKeyPath:@"isPlaybackBufferEmpty" options:NSKeyValueObservingOptionNew context:nil];
+    [self.avPlayer.currentItem addObserver:self forKeyPath:@"playbackLikelyToKeepUp" options:NSKeyValueObservingOptionNew context:nil];
+    
     // (7)监听音乐播放的进度
     // 防止循环引用
     __weak typeof(self) weakSelf = self;
-    __block UISlider *weakPregressSlider = _pregressSlider;
-    __block UILabel *weakPregressLabel = _pregressLabel;
+    __weak UISlider *weakPregressSlider = _pregressSlider;
+    __weak UILabel *weakPregressLabel = _pregressLabel;
     self.timePlayProgerssObserver = [self.avPlayer addPeriodicTimeObserverForInterval:CMTimeMake(1.0, 1.0) queue:dispatch_get_main_queue() usingBlock:^(CMTime time) {
         // 当前播放的时间
         float current = CMTimeGetSeconds(time);
@@ -112,6 +116,8 @@
     }];
     // (8)监听音乐播放是否完成
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(playFinished:) name:AVPlayerItemDidPlayToEndTimeNotification object:nil];
+    
+    [self.avPlayer play];
 }
 - (void)observeValueForKeyPath:(NSString *)keyPath ofObject:(id)object change:(NSDictionary*)change context:(void *)context {
     if ([keyPath isEqualToString:@"status"]) {
@@ -121,6 +127,7 @@
                 break;
             case AVPlayerStatusReadyToPlay:
                 NSLog(@"KVO：准备完毕，可以播放");
+                [self.avPlayer play];
                 break;
             case AVPlayerStatusFailed:
                 NSLog(@"KVO：加载失败，网络或者服务器出现问题");
@@ -141,6 +148,16 @@
         NSTimeInterval scale = totalLoadTime/duration;
         //更新缓冲进度条
         _progressView.progress = scale;
+    }
+    
+     if ([keyPath isEqualToString:@"isPlaybackBufferEmpty"])
+     {
+         NSLog(@"isPlaybackBufferEmpty = %d",self.avPlayer.currentItem.isPlaybackBufferEmpty);
+     }
+    
+    if ([keyPath isEqualToString:@"playbackLikelyToKeepUp"])
+    {
+        NSLog(@"playbackLikelyToKeepUp = %d",self.avPlayer.currentItem.playbackLikelyToKeepUp);
     }
 }
 - (void)playFinished:(NSNotification *)notification {

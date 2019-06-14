@@ -26,7 +26,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    
+   
     // 1.初识化UI
     // (1)初始化三个Button;
     NSArray *titleArr = @[@"播放",@"暂停",@"停止"];
@@ -34,33 +34,33 @@
         
         UIButton *button = [UIButton buttonWithType:UIButtonTypeSystem];
         [self.view addSubview:button];
-        [button setFrame:CGRectMake(20 + i * 50, 130 , 60, 40)];
+        [button setFrame:CGRectMake(20 + i * 50, 200 , 60, 40)];
         [button setTitle:titleArr[i] forState:UIControlStateNormal];
         button.tag = i+100;
         [button addTarget:self action:@selector(controlAVAudioAction:) forControlEvents:UIControlEventTouchUpInside];
     }
-    
+  
     // (2)初始化播放控制
-    _pregressSlider = [[UISlider alloc] initWithFrame:CGRectMake(20, 50, ScreenWidth - 130 - 20, 20)];
+    _pregressSlider = [[UISlider alloc] initWithFrame:CGRectMake(20, 100, ScreenWidth - 130 - 20, 20)];
     [self.view addSubview: _pregressSlider];
     _pregressSlider.minimumValue = 0.0f;
     _pregressSlider.maximumValue = 1.0f;
     [_pregressSlider addTarget:self action:@selector(pregressChange) forControlEvents:UIControlEventValueChanged];
-    _pregressLabel = [[UILabel alloc] initWithFrame:CGRectMake(ScreenWidth - 120, 50, 100, 20)];
+    _pregressLabel = [[UILabel alloc] initWithFrame:CGRectMake(ScreenWidth - 120, 100, 100, 20)];
     _pregressLabel.text = @"00:00/00:00";
     [self.view addSubview:_pregressLabel];
     
     // (3)用NSTimer来监控音频播放进度
     _timer = [NSTimer scheduledTimerWithTimeInterval:0.01 target:self selector:@selector(playProgress) userInfo:nil repeats:YES];
-    
+   
     // (4)初始化音量控制
-    _volumeSlider = [[UISlider alloc] initWithFrame:CGRectMake(20, 90, ScreenWidth - 130 - 20, 20)];
+    _volumeSlider = [[UISlider alloc] initWithFrame:CGRectMake(20, 140, ScreenWidth - 130 - 20, 20)];
     [_volumeSlider addTarget:self action:@selector(volumeChange) forControlEvents:UIControlEventValueChanged];
     _volumeSlider.minimumValue = 0.0f;
     _volumeSlider.maximumValue = 10.0f;
     _volumeSlider.value = 1.0f;
     [self.view addSubview:_volumeSlider];
-    UILabel *volumeLabel = [[UILabel alloc] initWithFrame:CGRectMake(ScreenWidth - 120, 90, 40, 20)];
+    UILabel *volumeLabel = [[UILabel alloc] initWithFrame:CGRectMake(ScreenWidth - 120, 140, 40, 20)];
     volumeLabel.text = @"音量";
     [self.view addSubview:volumeLabel];
     
@@ -80,6 +80,14 @@
     // (7)准备播放
     [_avAudioPlayer prepareToPlay];
    
+}
+
+- (void)viewWillDisappear:(BOOL)animated
+{
+    [super viewWillDisappear:animated];
+    
+    [_timer invalidate];
+    _timer = nil;
 }
 
 // 音频控制
@@ -163,6 +171,11 @@
     NSLog(@"audioPlayerEndInterruption");
     // 你可以帮用户开启 也可以什么都不执行，让用户自己决定
     [_avAudioPlayer play];
+}
+
+- (void)dealloc
+{
+    NSLog(@"%s",__func__);
 }
 
 - (void)didReceiveMemoryWarning {
